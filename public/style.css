@@ -32,7 +32,7 @@
 }
 
 .main__controls {
-    color: #33ff00;
+    color: #ffffff;
     display: flex;
     justify-content: space-between;
     padding: 5px;
@@ -40,6 +40,10 @@
 
 .main__controls__block {
     display: flex;
+}
+
+.logo {
+    color: yellow;
 }
 
 .main__controls__button {
