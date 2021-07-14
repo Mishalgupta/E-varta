@@ -139,6 +139,14 @@ const setPlayVideo = () => {
     document.querySelector('.main__video_button').innerHTML = html;
 }
 
+
+// End Call
+const endCall = () => {
+    window.location.href = "/";
+}
+
+document.getElementById("end-button").addEventListener("click", endCall);
+
 //socket.IO
 // Socket.IO is a library that enables real-time, bidirectional
 // and event-based communication between the browser and the server.
