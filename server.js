@@ -37,7 +37,7 @@ io.on('connection', socket => {
 
 
 
-server.listen(3030);
+server.listen(3030 || process.env.PORT);
 
 //WebRtc:
 //it is free open source project somet hing that connect two peers and enable them to share audoio & video.
