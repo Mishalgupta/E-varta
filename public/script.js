@@ -140,6 +140,25 @@ const setPlayVideo = () => {
 }
 
 
+// URL Copy To Clipboard
+document.getElementById("invite-button").addEventListener("click", getURL);
+
+function getURL() {
+    const c_url = window.location.href;
+    copyToClipboard(c_url);
+    alert("Url Copied to Clipboard,\nShare it with your Friends!\nUrl: " + c_url);
+}
+
+function copyToClipboard(text) {
+    var dummy = document.createElement("textarea");
+    document.body.appendChild(dummy);
+    dummy.value = text;
+    dummy.select();
+    document.execCommand("copy");
+    document.body.removeChild(dummy);
+}
+
+
 // End Call
 const endCall = () => {
     window.location.href = "/";

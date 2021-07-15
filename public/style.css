@@ -42,8 +42,24 @@
     display: flex;
 }
 
+/* center logo */
+
 .logo {
-    color: yellow;
+    display: flex;
+    flex: 1 1 40rem;
+    align-items: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.logo img {
+    width: 4.5rem;
+    align-items: center;
+    margin: 2rem 1rem 1rem 3rem;
+}
+
+.logo h1 {
+    color: rgb(0, 187, 255);
+    font-size: 45px
 }
 
 .main__controls__button {

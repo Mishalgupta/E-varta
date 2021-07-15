@@ -16,7 +16,11 @@ app.use(express.static('public'));
 //server for one to one connection
 app.use('/peerjs', peerServer);
 
-app.get('/', (req, res) => {
+app.get("/", (req, res) => {
+    res.render("index");
+});
+
+app.get('/create-room/', (req, res) => {
     res.redirect(`/${uuidv4()}`);
 })
 
@@ -31,7 +35,7 @@ io.on('connection', socket => {
         socket.to(roomId).emit('user-connected', userId);
         socket.on('message', (message) => {
             io.to(roomId).emit('createMessage', message);
-        });
+        })
         socket.on("disconnect", () => {
             socket.to(roomId).emit("user-disconnected", userId);
         });
@@ -40,7 +44,7 @@ io.on('connection', socket => {
 
 
 
-server.listen(process.env.PORT || 3000)
+server.listen(process.env.PORT || 3030)
 
 //WebRtc:
 //it is free open source project somet hing that connect two peers and enable them to share audoio & video.
