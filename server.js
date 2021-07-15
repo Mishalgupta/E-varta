@@ -47,14 +47,23 @@ io.on('connection', socket => {
 server.listen(process.env.PORT || 3030)
 
 //WebRtc:
-//it is free open source project somet hing that connect two peers and enable them to share audoio & video.
+//it is free open source project something that connect two peers and enable them to share audio & video.
+//WebRTC (Web Real-Time Communication) is a technology which enables Web applications and
+//sites to capture and optionally stream audio and/or video media,
+//as well as to exchange arbitrary data between browsers without requiring an intermediary.
+// .............................................................
 //uuid:
 //it is used to get the unique id for different users, this generates random unique id for the rooms.
-//Peers.js
+// .............................................................
+//Peers.js:
 //PeerJS simplifies WebRTC peer-to-peer data, video, and audio calls.
-//socket.IO
+// .............................................................
+//socket.IO:
 //Socket.IO is a library that enables real-time, bidirectional
 //and event-based communication between the browser and the server.
 //It consists of: a Node. js server: Source | API.
+//a socket.io server will attach to an HTTP server so it can serve its own client code
+//through /socket.io/socket.io.js .
+// .............................................................
 //EJS:
 //embeded Js, it is used to pass varibles in html from backend to frontend.
