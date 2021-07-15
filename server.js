@@ -52,3 +52,9 @@ server.listen(process.env.PORT || 3030)
 //it is used to get the unique id for different users, this generates random unique id for the rooms.
 //Peers.js
 //PeerJS simplifies WebRTC peer-to-peer data, video, and audio calls.
+//socket.IO
+//Socket.IO is a library that enables real-time, bidirectional
+//and event-based communication between the browser and the server.
+//It consists of: a Node. js server: Source | API.
+//EJS:
+//embeded Js, it is used to pass varibles in html from backend to frontend.
