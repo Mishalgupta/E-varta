@@ -27,9 +27,9 @@ Meeting view:
 
 ## Technologies used:
 
-**FrontEnd:**     HTML, CSS, Javascript.
+**FrontEnd:** HTML, CSS, Javascript.
 
-**BackEnd:** Node.js, Express.js, Socket.io, Webrtc.
+**BackEnd:** Node.js, Express.js, Ejs, Socket.io, Webrtc.
 
   
 ## Installation:
