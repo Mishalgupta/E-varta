@@ -95,7 +95,7 @@ h6 {
 
 .hero {
     display: flex;
-    min-height: 60vh;
+    min-height: 75vh;
     flex-wrap: wrap;
 }
 
